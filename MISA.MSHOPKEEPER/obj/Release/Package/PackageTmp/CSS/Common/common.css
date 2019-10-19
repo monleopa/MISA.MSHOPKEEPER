@@ -1,0 +1,322 @@
+﻿@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Contents/Fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Roboto',Tahoma,sans-serif !important;
+    display: flex;
+    font-size: 13px;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-center {
+    margin: auto 0;
+}
+
+.button-disable {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.text-position-center {
+    text-align: center;
+}
+
+.text-position-left {
+    text-align: left;
+}
+
+.text-position-right {
+    text-align: right;
+}
+
+.datepicker-icon {
+    width: 18px;
+    height: 18px;
+    background: url('/Contents/Icons/common-icon.png') no-repeat;
+    background-position: -3px -175px;
+}
+
+.in-valid {
+    border: 1px solid red !important;
+}
+
+.disable-blacken {
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.margin-left {
+    margin-left: 4px;
+}
+
+.margin-left-8 {
+    margin-left: 8px;
+}
+
+select {
+    -webkit-appearance: none;
+    font-family: Roboto !important;
+    font-size: 13px;
+    height: 26px;
+    padding: 0 24px 0 8px;
+    border: 1px solid #ccc;
+    background-image: url('/Contents/Icons/arrow-down-line.png');
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+}
+
+.ui-tooltip {
+
+}
+
+.warning-tooltip {
+    background: red;
+    color: #fff;
+    width: 200px;
+    border: none;
+    position: absolute;
+}
+
+.default-tooltip {
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+}
+
+/******************* Icon Common *******************/
+.btn-icon {
+    background: url('/Contents/Icons/common-icon.png') no-repeat;
+    width: 16px;
+    height: 16px;
+    padding-right: 25px;
+}
+
+.btn-icon:hover {
+    cursor: pointer;
+}
+
+.btn-icon-new {
+    background-position: -150px -202px;
+}
+
+.btn-icon-duplicate {
+    background-position: -975px -127px;
+}
+
+.btn-icon-view {
+    background-position: -1599px -127px;
+}
+
+.btn-icon-edit {
+    background-position: -1449px -127px;
+}
+
+.btn-icon-delete {
+    background-position: -1075px -127px;
+}
+
+.btn-icon-print {
+    background-position: -225px -127px;
+}
+
+.btn-icon-search {
+    width: 16px;
+    height: 16px;
+    background: url('/Contents/Icons/common-icon.png');
+    background-position: -355px 0px;
+}
+
+.btn-icon-triangle {
+    width: 16px;
+    height: 16px;
+    background: url('/Contents/Icons/down-white.png') no-repeat;
+    background-size: 7px;
+    background-position: 3px 5px;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.btn-icon-prev {
+    background-position: -476px -125px;
+}
+
+.btn-icon-next {
+    background-position: -421px -125px;
+}
+
+.btn-icon-save {
+    background-position: -926px -127px;
+}
+
+.btn-icon-back {
+    background-position: -1398px -127px;
+}
+
+.btn-icon-close {
+    background-position: -275px -125px;
+}
+
+.btn-icon-help {
+    background-position: -176px -202px;
+}
+
+.btn-icon-bluesearch {
+    background-position: -1573px -126px;
+}
+
+.btn-icon-agree {
+    background-position: -377px -126px;
+}
+
+.btn-icon-cancel {
+    background-position: -252px -126px;
+}
+
+.btn-icon-helpsmall {
+    width: 16px;
+    height: 16px;
+    background: url(/Contents/Icons/icon_help_18.png) no-repeat;
+    background-size: 14px;
+    padding-right: 22px;
+}
+
+.btn-icon-arrow {
+    width: 10px;
+    height: 15px;
+    background: url('/Contents/Icons/arrow-down-line.png') no-repeat;
+    background-position: 0px 10px;
+    padding-right: 0;
+    margin-left: 4px;
+}
+
+.btn-icon-checkbox {
+    background: url(/Contents/Icons/uncheck.png) no-repeat;
+    background-position: -3px -2px;
+}
+
+.btn-icon-checked {
+    background: url(/Contents/Icons/check.png) no-repeat;
+    background-position: -3px -2px;
+}
+
+.btn-icon-childchecked {
+    background: url(/Contents/Icons/child-checked.png) no-repeat;
+    background-position: 0px 1px;
+}
+
+.btn-icon-plus {
+    background: url('/Contents/Icons/plus.png') no-repeat;
+}
+
+.btn-icon-minus {
+    background: url('/Contents/Icons/minus.png') no-repeat;
+}
+
+.btn-icon-goback {
+    background-position: -451px -125px;
+}
+
+.btn-default {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img-danger-valid {
+    background: url('/Contents/Icons/exclamation.png') no-repeat;
+    width: 27px;
+    height: 16px;
+    margin: auto 4px;
+}
+
+pre {
+    display: block;
+    font-size: 13px !important;
+    margin: 0 !important;
+}
+
+.date-ac-input {
+    background: #fff !important;
+    color: black !important;
+}
+
+#messageToast {
+    color: #fff;
+    position: absolute;
+    z-index: 99999;
+    background: red;
+    padding: 8px 20px;
+    top: 150px;
+    right: 140px;
+}

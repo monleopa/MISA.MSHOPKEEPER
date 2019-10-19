@@ -1,0 +1,182 @@
+﻿body {
+    background: #e6e5ea;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 13px;
+}
+
+.row-selected {
+    background: #c1e1f4;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+}
+
+    .btn-icon:hover {
+        cursor: pointer;
+    }
+
+.icon-dropdown {
+    background: url('/Contents/Icons/down-white.png') no-repeat;
+    width: 10px;
+    height: 8px;
+    margin-left: 12px;
+    background-size: 8px;
+}
+
+.icon-search {
+    width: 16px;
+    height: 16px;
+    background: url('/Contents/CukCuk/icon-search.png') no-repeat;
+    background-position: center;
+}
+
+/***************** Content-main *****************/
+
+.content-main {
+    top: 8px;
+    left: 148px;
+    right: 8px;
+    bottom: 8px;
+    position: absolute;
+    background: #fff;
+}
+
+.content-main-title {
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    z-index: 1;
+    background: #fff;
+}
+
+    .content-main-title .title-text {
+        font-size: 18px;
+    }
+
+    .content-main-title .btn-response {
+        position: absolute;
+        right: 0px;
+    }
+
+        .content-main-title .btn-response .btn-text {
+            margin-left: 4px;
+        }
+
+.icon-response {
+    background: url('/Contents/CukCuk/viewEmail.png') no-repeat;
+}
+
+/*************** Grid Table ***************/
+
+.grid-table-master {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: calc(100% - 196px);
+}
+
+.grid-table-detail {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 196px;
+}
+
+/**************** Paginate ******************/
+.grid-table-master .paginate {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+    align-items: center;
+    padding: 8px;
+}
+
+    .grid-table-master .paginate .devide {
+        width: 1px;
+        background: #ccc;
+        height: 12px;
+        margin: auto 8px;
+    }
+
+    .grid-table-master .paginate .paginate-number {
+        padding: 0 8px;
+    }
+
+    .grid-table-master .paginate .paginate-text {
+        padding: 0 8px;
+    }
+
+    .grid-table-master .paginate .paginate-icon {
+        width: 8px;
+        height: 8px;
+        padding: 8px;
+        border: 1px solid #026b98;
+        border-radius: 3px;
+        margin-left: 4px;
+    }
+
+.paginate-icon {
+    cursor: pointer;
+}
+
+    .paginate-icon.icon-go-first {
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+        background-position: -648px -123px;
+    }
+
+    .paginate-icon.icon-prev {
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+        background-position: -699px -123px;
+    }
+
+    .paginate-icon.icon-next {
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+        background-position: -748px -123px;
+        
+    }
+
+    .paginate-icon.icon-go-last {
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+        background-position: -798px -123px;
+    }
+
+    .paginate-icon.icon-refresh {
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+        background-position: -848px -123px;
+    }
+
+.paginate .number-page {
+    width: 30px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: center;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.paginate .paginate-number-record {
+    padding: 0 8px;
+}
+
+.paginate .select-number-record {
+    border: 1px solid #ccc;
+    height: 26px;
+    border-radius: 3px;
+}
+
+.paginate .paginate-total-result {
+    position: absolute;
+    right: 8px;
+    top: 32%;
+}
+

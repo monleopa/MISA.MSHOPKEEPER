@@ -1,0 +1,13 @@
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.DL.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.DL.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.Common.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.Entity.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.Common.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\bin\Debug\MISA.Entity.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.csprojAssemblyReference.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.Properties.Resources.resources
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.csproj.GenerateResource.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.csproj.CoreCompileInputs.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.csproj.CopyComplete
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.DL\obj\Debug\MISA.DL.pdb

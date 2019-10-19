@@ -1,0 +1,111 @@
+﻿/**************** Toolbar *****************/
+
+.toolbar {
+    display: flex;
+    background: #026b98;
+    overflow: hidden;
+}
+
+.divide {
+    border-right: 1px solid #ccc;
+    height: 30px;
+}
+
+.toolbar-item {
+    display: flex;
+    border: 1px solid transparent;
+    padding: 8px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+    .toolbar-item:hover {
+        cursor: pointer;
+        background: #01567b;
+    }
+
+    .toolbar-item .toolbar-item-icon {
+        width: 16px;
+        height: 16px;
+        background: url('/Contents/Icons/common-icon.png') no-repeat;
+    }
+
+    .toolbar-item .item-icon-add {
+        width: 12px;
+        background-position: -4px -127px;
+    }
+
+    .toolbar-item .item-icon-duplicate {
+        background-position: -978px -127px;
+    }
+
+    .toolbar-item .item-icon-view {
+        background-position: -1601px -127px;
+    }
+
+    .toolbar-item .item-icon-update {
+        background-position: -1454px -128px;
+    }
+
+    .toolbar-item .item-icon-delete {
+        background-position: -1080px -128px;
+    }
+
+    .toolbar-item .item-icon-refresh {
+        background-position: -880px -127px;
+    }
+
+    .toolbar-item .item-icon-cancel {
+        background-position: -1403px -127px;
+    }
+
+    .toolbar-item .item-icon-print {
+        background-position: -228px -127px;
+    }
+
+    .toolbar-item .item-icon-save {
+        background-position: -330px -127px;
+    }
+
+    .toolbar-item .item-icon-prev {
+        background-position: -479px -127px;
+    }
+
+    .toolbar-item .item-icon-close {
+        background-position: -280px -127px;
+    }
+
+    .toolbar-item .item-icon-help {
+        background-position: -179px -202px;
+    }
+
+    .toolbar-item .item-icon-next {
+        background-position: -428px -127px;
+        margin-left: 8px;
+    }
+
+    .toolbar-item .toolbar-item-text {
+        margin-left: 8px;
+        color: #fff;
+        max-width: 60px;
+        /* min-width: 60px; */
+        overflow: hidden;
+    }
+    .toolbar-item .icon-dropdown {
+        background: url('/Contents/Icons/down-white.png') no-repeat;
+        width: 10px;
+        height: 10px;
+        margin-left: 12px;
+        background-size: 8px;
+        background-position: center;
+    }
+
+    .toolbar-item .btn-mg-0 {
+        margin-left: 0px;
+    }
+
+.toolbar-item .divide {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    margin-left: 8px;
+}

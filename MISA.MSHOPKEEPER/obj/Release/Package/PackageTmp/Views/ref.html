@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MShopKeeper</title>
+
+    <link href="/CSS/Libraries/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/Common/custom.css" rel="stylesheet" />
+    <link href="/CSS/Common/common.css" rel="stylesheet" />
+    <link href="/CSS/Views/layout.css" rel="stylesheet" />
+    <link href="/CSS/Views/ref.css" rel="stylesheet" />
+    <link href="/CSS/Views/toolbar.css" rel="stylesheet" />
+    <link href="/CSS/Views/table.css" rel="stylesheet" />
+    <link href="/CSS/Views/popup.css" rel="stylesheet" />
+    <link href="/CSS/Views/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo vertical-center">
+        </div>
+        <div class="content-main-title">
+            <div class="title-text">Thu, chi tiền mặt</div>
+        </div>
+
+        <div class="header-main-right">
+            <div class="header-right-use">
+                <a href="https://misanmtuan.mshopkeeper.vn/main#getstarted">Bắt đầu sử dụng</a>
+            </div>
+            <div class="select-user">
+                <div class="select-user-text">misandanh</div>
+                <div class="select-user-icon"></div>
+            </div>
+            <div class="option-user">
+                <div class="option-user-avatar"></div>
+                <div class="option-user-infor">
+                    <div class="option-user-text">Nguyễn Đức Anh</div>
+                    <div class="option-user-icon"></div>
+                </div>
+            </div>
+            <div class="phone-support">
+            </div>
+            <div class="notify">
+                <div class="notify-icon"></div>
+            </div>
+            <div class="help">
+                <div class="help-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Menu -->
+        <div class="content-menu">
+            <div class="menu-item">
+                <div class="item-icon item-icon-overview"></div>
+                <div class="item-text">Tổng quan</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-report"></div>
+                <div class="item-text">Báo cáo</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-notebuy"></div>
+                <div class="item-text">Sổ giao hàng</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-buy"></div>
+                <div class="item-text">Mua hàng</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-stock"></div>
+                <div class="item-text">Kho</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-cash"></div>
+                <div class="item-text">Quỹ tiền</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-fee"></div>
+                <div class="item-text">Chi phí</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-sale"></div>
+                <div class="item-text">Khuyến mại</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-sms"></div>
+                <div class="item-text">SMS Marketing</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-dictionary"></div>
+                <div class="item-text">Danh mục</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-meinvoice"></div>
+                <div class="item-text">Hóa đơn điện tử</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-config"></div>
+                <div class="item-text">Thiết lập</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-help"></div>
+                <div class="item-text">Trợ giúp</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-subcriber"></div>
+                <div class="item-text">Thuê bao</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-ocm"></div>
+                <div class="item-text">OCM</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-5shop"></div>
+                <div class="item-text">5Shop</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-icon item-icon-api"></div>
+                <div class="item-text">API</div>
+            </div>
+        </div>
+
+        <div class="content-main">
+            <div class="grid-table-master">
+                <div class="toolbar">
+                    <div class="toolbar-item" id="btnAdd" title="Ctrl+1">
+                        <div class="toolbar-item-icon item-icon-add"></div>
+                        <div class="toolbar-item-text">Thêm mới</div>
+                        <div class="icon-dropdown vertical-center"></div>
+                    </div>
+
+                    <div class="divide vertical-center"></div>
+
+                    <div class="toolbar-item" id="btnDuplicate">
+                        <div class="toolbar-item-icon item-icon-duplicate"></div>
+                        <div class="toolbar-item-text">Nhân bản</div>
+                    </div>
+
+                    <div class="divide vertical-center"></div>
+
+                    <div class="toolbar-item" id="btnView">
+                        <div class="toolbar-item-icon item-icon-view"></div>
+                        <div class="toolbar-item-text">Xem</div>
+                    </div>
+
+                    <div class="divide vertical-center"></div>
+
+                    <div class="toolbar-item" id="btnUpdate" title="Ctrl+E">
+                        <div class="toolbar-item-icon item-icon-update"></div>
+                        <div class="toolbar-item-text">Sửa</div>
+                    </div>
+
+                    <div class="divide vertical-center"></div>
+
+                    <div class="toolbar-item" id="btnDelete" title="Ctrl+D">
+                        <div class="toolbar-item-icon item-icon-delete"></div>
+                        <div class="toolbar-item-text">Xóa</div>
+                    </div>
+
+                    <div class="divide vertical-center"></div>
+
+                    <div class="toolbar-item" id="btnRefresh">
+                        <div class="toolbar-item-icon item-icon-refresh"></div>
+                        <div class="toolbar-item-text">Nạp</div>
+                    </div>
+                </div>
+
+                <div class="table-master-container disable-blacken">
+                    <table class="table-header" id="tableMasterHeader">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                    </table>
+                    <table class="table-body" id="tableMasterBody">
+                        <tbody></tbody>
+                    </table>
+
+                    <div class="loading-wrap loading-table-master" id="loadTableMaster">
+                        <div class="loading-content">
+                            <img class="img-loading" src="/Contents/Images/loading.gif" />
+                            <div class="text-loading">Đang lấy dữ liệu ...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paginate">
+                    <div class="paginate-icon icon-go-first "></div>
+                    <div class="paginate-icon icon-prev "></div>
+                    <div class=" paginate-text">Trang</div>
+                    <div class="paginate-number"><input class="number-page" id="offsetRow" value="1" /></div>
+                    <div class="  paginate-text"> trên <span id="totalPage">1</span></div>
+                    <div class="paginate-icon icon-next "></div>
+                    <div class="paginate-icon icon-go-last "></div>
+                    <div class="paginate-icon icon-refresh " id="paginateRefresh"></div>
+                    <div class="paginate-number-record">
+                        <select class="select-number-record" id="PageSize">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>25</option>
+                            <option selected>50</option>
+                            <option>100</option>
+                        </select>
+                    </div>
+
+                    <div class="paginate-total-result vertical-center">
+                        <div id="noData" style="display: none">Không có dữ liệu</div>
+                        <div id="hasData">Hiển thị <span id="fromRecord">1</span> - <span id="toRecord">42</span> trên <span id="totalRecord">42</span> kết quả</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-table-detail">
+                <div class="grid-detail-title">
+                    <div class="detail-title">Chi Tiết</div>
+                </div>
+
+                <div class="table-detail-container">
+                    <table class="table-detail-header" id="tableDetailHeader">
+                        <thead>
+                            <tr></tr>
+                        </thead>
+                    </table>
+                    <table class="table-detail-body" id="tableDetailBody">
+                        <tbody></tbody>
+                    </table>
+                    <table class="table-detail-footer" id="tableDetailFooter">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td class="total-amount text-right">0</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="loading-wrap loading-table-detail" id="loadTableDetail">
+                        <div class="loading-content">
+                            <img class="img-loading" src="/Contents/Images/loading.gif" />
+                            <div class="text-loading">Đang lấy dữ liệu ...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup chọn loại thêm mới -->
+    <div id="typeCreate" class="type-create" style="display: none">
+        <div class="row-type-create" type="1" tabindex="0">Phiếu thu tiền</div>
+        <div class="row-type-create" type="4" tabindex="0">Phiếu chi tiền</div>
+    </div>
+
+    <!-- dialog thêm, sửa, xem -->
+    <div id="dialogCreateEditView" title="Thêm mới phiếu thu" class="dialog-create-edit" style="display: none;">
+        <div class="toolbar">
+            <div class="toolbar-item" id="btnDlPrev">
+                <div class="toolbar-item-icon item-icon-prev"></div>
+                <div class="toolbar-item-text">Trước</div>
+            </div>
+            <div class="toolbar-item" id="goFirst"><div class="icon-dropdown btn-mg-0"></div></div>
+
+            <div class="toolbar-item" id="btnDlNext">
+                <div class="toolbar-item-text">Sau</div>
+                <div class="toolbar-item-icon item-icon-next"></div>
+            </div>
+            <div class="toolbar-item" id="goLast"><div class="icon-dropdown  btn-mg-0"></div></div>
+
+            <div class="divide vertical-center"></div>
+
+            <div class="toolbar-item" id="btnDlAdd">
+                <div class="toolbar-item-icon item-icon-add"></div>
+                <div class="toolbar-item-text">Thêm mới</div>
+            </div>
+
+            <div class="toolbar-item" id="btnDlUpdate">
+                <div class="toolbar-item-icon item-icon-update"></div>
+                <div class="toolbar-item-text">Sửa</div>
+            </div>
+
+            <div class="toolbar-item" id="btnSave" title="Ctrl+S">
+                <div class="toolbar-item-icon item-icon-save"></div>
+                <div class="toolbar-item-text">Lưu</div>
+            </div>
+
+            <div class="toolbar-item" id="btnDlDelete" title="Ctrl+D">
+                <div class="toolbar-item-icon item-icon-delete"></div>
+                <div class="toolbar-item-text">Xóa</div>
+            </div>
+
+            <div class="toolbar-item" id="btnDlCancel">
+                <div class="toolbar-item-icon item-icon-cancel"></div>
+                <div class="toolbar-item-text">Hoãn</div>
+            </div>
+
+            <div class="divide vertical-center"></div>
+
+            <div class="toolbar-item" id="btnDlPrint">
+                <div class="toolbar-item-icon item-icon-print"></div>
+                <div class="toolbar-item-text">In</div>
+                <div class="icon-dropdown"></div>
+            </div>
+
+            <div class="divide vertical-center"></div>
+
+            <div class="toolbar-item" id="btnDlHelp">
+                <div class="toolbar-item-icon item-icon-help"></div>
+                <div class="toolbar-item-text">Trợ giúp</div>
+            </div>
+
+            <div class="toolbar-item" id="btnDlClose" title="Ctrl+Q">
+                <div class="toolbar-item-icon item-icon-close"></div>
+                <div class="toolbar-item-text">Đóng</div>
+            </div>
+
+        </div>
+        <form id="formCreateEditView">
+            <div class="dialog-content">
+                <div class="infor-general">
+                    <input hidden property="RefID" />
+                    <input hidden property="RefType" />
+                    <div class="dialog-content-title">THÔNG TIN CHUNG</div>
+                    <div class="grid-infor-general">
+                        <div class="vertical-center" id="labelRefTarget">Đối tượng nộp</div>
+                        <div class="input-container display-flex">
+                            <input hidden property="RefTargetID" />
+                            <input maxlength="20" property="RefTargetCode" />
+                            <div class="icon-dropdown-arrow" id="btnSelectRefTarget"></div>
+                        </div>
+                        <div class="input-container"><input maxlength="255" property="RefTargetName" /><input hidden property="RefObjectName" /></div>
+
+                        <div class="vertical-center" id="labelPersonImple">Người nộp</div>
+                        <div class="grid-wrap input-container"><input maxlength="255" property="PersonImple" /></div>
+
+                        <div class="vertical-center">Địa chỉ</div>
+                        <div class="grid-wrap input-container"><input maxlength="255" property="Address" /></div>
+
+                        <div class="vertical-center" id="labelNote">Lý do thu</div>
+                        <div class="grid-wrap input-container"><input maxlength="255" property="Note" /></div>
+
+                        <div class="vertical-center" id="labelEmployee">Nhân viên thu</div>
+                        <div class="input-container display-flex">
+                            <input hidden property="EmployeeID" />
+                            <input maxlength="20" property="EmployeeCode" />
+                            <div class="icon-dropdown-arrow" id="btnSelectEmployee"></div>
+                        </div>
+                        <div class="input-container disable"><input class="input-disable" disabled property="EmployeeName" /></div>
+                    </div>
+                </div>
+                <div class="infor-ref">
+                    <div class="dialog-content-title">CHỨNG TỪ</div>
+                    <div class="grid-infor-ref">
+                        <div class="vertical-center" id="labelRefNo">Số phiếu thu</div>
+                        <div class="display-flex">
+                            <div class="input-container display-flex" style="width: 100%">
+                                <input maxlength="20" property="RefNo" id="refNo" />
+                            </div>
+                            <div class="img-danger-valid" style="display: none"></div>
+                        </div>
+                        <div class="vertical-center"id="labelRefDate">Ngày thu</div>
+                        <div class="display-flex">
+                            <div class="input-container display-flex" style="width: 100%">
+                                <input maxlength="10" class="date-picker" property="RefDate" id="refDate" />
+                            </div>
+                            <div class="img-danger-valid" style="display: none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="table-dialog">
+            <div class="table-dialog-title">CHI TIẾT</div>
+            <div class="table-dialog-container">
+                <table class="table-dialog-header" id="tableDialogHeader">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                </table>
+
+                <table class="table-dialog-body" id="tableDialogBody">
+                    <tbody></tbody>
+                </table>
+
+                <table class="table-dialog-footer" id="tableDialogFooter" tabindex="0">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td id="totalAmountDialog">0</td>
+                            <td></td>
+                            <td id="columnDelete"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="loading-wrap loading-dialog-create" id="loadDialog" style="display: none">
+            <div class="loading-content">
+                <img class="img-loading" src="/Contents/Images/loading.gif" />
+                <div class="text-loading">...</div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------- Dialog Thông báo xác nhận xóa, ---------------------------------->
+    <div id="dialogDeleteRef" class="dialog-delete-inward" title="Xoá dữ liệu">
+        <div class="content-dialogDelete">
+            <div class="icon-question"></div>
+            <div class="txt-question">
+                <div id="deleteMulti">Bạn có chắc muốn xóa những chứng từ đã chọn không?</div>
+                <div id="deleteSingle">Bạn có chắc chắn muốn xóa <span id="refTypeDelete">Phiếu thu</span> <span id="refCodeDelete">PT0001</span> không?</div>
+            </div>
+        </div>
+        <div class="footer-dialogDelete">
+            <div class="btn-dialogDelete">
+                <div class="btn-delete" id="agreeDelete">
+                    <div class="content-btn-delete">
+                        <div class="icon-delete-dialogDelete"></div>
+                        <div class="sub-btn-delete">Xoá</div>
+                    </div>
+                </div>
+                <div class="btn-cancel-delete">
+                    <div class="content-btn-cancel" id="cancelDelete">
+                        <div class="icon-cancel-dialogDelete"></div>
+                        <div class="sub-btn-cancel">Huỷ bỏ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------- Dialog Thông báo xác nhận hủy thêm sửa, ---------------------------------->
+    <div id="dialogNotifyRef" class="dialog-notify-inward" title="Dữ liệu chưa được lưu">
+        <div class="content-dialogNotify">
+            <div class="icon-question"></div>
+            <div class="txt-question">Dữ liệu đã thay đổi, bạn có muốn lưu không?</div>
+        </div>
+        <div class="footer-dialogNotify">
+            <div class="btn-dialogNotify">
+                <div class="btn-save" id="btnSaveClose">
+                    <div class="content-btn-save">
+                        <div class="icon-save-dialogNotify"></div>
+                        <div class="sub-btn-save">Lưu</div>
+                    </div>
+                </div>
+                <div class="btn-unSave" id="btnDontSave">
+                    <div class="content-btn-unSave">
+                        <div class="icon-unSave-dialogNotify"></div>
+                        <div class="sub-btn-unSave">Không lưu</div>
+                    </div>
+                </div>
+                <div class="btn-cancel-delete" id="btnCancelClose">
+                    <div class="content-btn-cancel">
+                        <div class="icon-cancel-dialogNotify"></div>
+                        <div class="sub-btn-cancel">Huỷ bỏ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog Thông báo chưa chọn dữ liệu, trùng mã -->
+    <div id="dialogNotifyDataInvalid" class="dialog-delete-inward" title="MShopKeeper">
+        <div class="content-dialogDelete">
+            <div class="icon-question" id="iconQuestion"></div>
+            <div class="icon-danger" id="iconDanger"></div>
+            <div class="txt-question" id="textInfor"></div>
+        </div>
+        <div class="footer-dialogDelete">
+            <div class="btn-dialogDelete">
+                <button class="btn-default btn-notify-invalid" id="yesNewNumber">
+                    <div class="content-btn-notify">Có</div>
+                </button>
+                <button class="btn-default btn-notify-invalid" id="noNewNumber">
+                    <div class="content-btn-notify">Không</div>
+                </button>
+                <button class="btn-default btn-notify-invalid" id="agreeNotify">
+                    <div class="content-btn-notify">Đồng ý</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Ngày chứng từ -->
+    <div class="filter-select" id="filterDate" style="display: none">
+        <div class="filter-row display-flex" value="9">
+            <div class="filter-row-text"> = : Bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="11">
+            <div class="filter-row-text"> < : Nhỏ hơn</div>
+        </div>
+
+        <div class="filter-row display-flex" value="13">
+            <div class="filter-row-text"> ≤ : Nhỏ hơn hoặc bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="10">
+            <div class="filter-row-text"> > : Lớn hơn</div>
+        </div>
+
+        <div class="filter-row display-flex" value="12">
+            <div class="filter-row-text"> ≥ : Lớn hơn hoặc bằng</div>
+        </div>
+    </div>
+
+    <!-- Filter Total Amount -->
+    <div class="filter-select" id="filterTotalAmount" style="display: none">
+        <div class="filter-row display-flex" value="0">
+            <div class="filter-row-text"> = : Bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="1">
+            <div class="filter-row-text"> < : Nhỏ hơn</div>
+        </div>
+
+        <div class="filter-row display-flex" value="2">
+            <div class="filter-row-text"> ≤ : Nhỏ hơn hoặc bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="3">
+            <div class="filter-row-text"> > : Lớn hơn</div>
+        </div>
+
+        <div class="filter-row display-flex" value="4">
+            <div class="filter-row-text"> ≥ : Lớn hơn hoặc bằng</div>
+        </div>
+    </div>
+
+    <!-- Filter RefCode -->
+    <div class="filter-select" id="filterRefCode" style="display: none">
+        <div class="filter-row display-flex" value="5">
+            <div class="filter-row-text"> * : Chứa</div>
+        </div>
+
+        <div class="filter-row display-flex" value="0">
+            <div class="filter-row-text"> = : Bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="7">
+            <div class="filter-row-text"> + : Bắt đầu bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="8">
+            <div class="filter-row-text"> - : Kết thúc bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="6">
+            <div class="filter-row-text"> ! : Không chứa</div>
+        </div>
+    </div>
+
+    <!-- Filter RefTargetName -->
+    <div class="filter-select" id="filterRefTargetName" style="display: none">
+        <div class="filter-row display-flex" value="5">
+            <div class="filter-row-text"> * : Chứa</div>
+        </div>
+
+        <div class="filter-row display-flex" value="0">
+            <div class="filter-row-text"> = : Bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="7">
+            <div class="filter-row-text"> + : Bắt đầu bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="8">
+            <div class="filter-row-text"> - : Kết thúc bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="6">
+            <div class="filter-row-text"> ! : Không chứa</div>
+        </div>
+    </div>
+
+    <!-- Filter Note -->
+    <div class="filter-select" id="filterNote" style="display: none">
+        <div class="filter-row display-flex" value="5">
+            <div class="filter-row-text"> * : Chứa</div>
+        </div>
+
+        <div class="filter-row display-flex" value="0">
+            <div class="filter-row-text"> = : Bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="7">
+            <div class="filter-row-text"> + : Bắt đầu bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="8">
+            <div class="filter-row-text"> - : Kết thúc bằng</div>
+        </div>
+
+        <div class="filter-row display-flex" value="6">
+            <div class="filter-row-text"> ! : Không chứa</div>
+        </div>
+    </div>
+
+    <!-- Table đối tượng -->
+    <div class="popup-dialog" id="popupRefTarget" style="display: none">
+        <table class="popup-table-header" id="tableTargetHeader">
+            <thead>
+                <tr>
+                    <th class="table-popup-code" property="RefTargetCode" position="1">Mã đối tượng</th>
+                    <th class="table-popup-name" property="RefTargetName" position="1">Tên đối tượng</th>
+                    <th class="table-popup-type" property="RefTargetType" position="1">Loại đối tượng</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="popup-table-body" id="tableTargetBody">
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Table nhân viên -->
+    <div class="popup-dialog" id="popupEmployee" style="display: none">
+        <table class="popup-table-header" id="tableEmployeeHeader">
+            <thead>
+                <tr>
+                    <th class="table-popup-code" property="EmployeeCode" position="1">Mã nhân viên</th>
+                    <th class="table-popup-name" property="EmployeeName" position="1">Tên nhân viên</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="popup-table-body" id="tableEmployeeBody">
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="messageToast" style="display: none">
+    </div>
+
+    <script src="/Scripts/Libraries/jquery-3.4.1.min.js"></script>
+    <script src="/Scripts/Libraries/jquery-ui.min.js"></script>
+    <script src="/Scripts/Libraries/jquery.maskedinput.min.js"></script>
+    <script src="/Scripts/Libraries/moment.js"></script>
+    <script src="/Scripts/Commons/resource.js"></script>
+    <script src="/Scripts/Commons/ajax.js"></script>
+    <script src="/Scripts/Commons/autocomplete.js"></script>
+    <script src="/Scripts/Commons/common.js"></script>
+    <script src="/Scripts/Commons/dialog.js"></script>
+    <script src="/Scripts/Commons/popup.js"></script>
+    <script src="/Scripts/Views/refJS.js"></script>
+</body>
+</html>

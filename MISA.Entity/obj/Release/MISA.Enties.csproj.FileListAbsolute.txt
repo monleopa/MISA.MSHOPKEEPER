@@ -1,0 +1,8 @@
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\bin\Release\MISA.Entity.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\bin\Release\MISA.Entity.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Enties.csprojAssemblyReference.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Entity.Properties.Resources.resources
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Enties.csproj.GenerateResource.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Enties.csproj.CoreCompileInputs.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Entity.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Entity\obj\Release\MISA.Entity.pdb

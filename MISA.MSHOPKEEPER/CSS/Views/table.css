@@ -1,0 +1,337 @@
+﻿/***************** Table Master ********************/
+
+.table-master-container {
+    position: absolute;
+    border-left: none;
+    border-right: none;
+    top: 34px;
+    left: 0;
+    bottom: 43px;
+    right: 0;
+    cursor: default;
+    overflow: auto hidden;
+    /*background: #ededed;*/
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+    .table-master-container .cell-checkbox:hover {
+        cursor: pointer
+    }
+
+    .table-master-container .cell-checkbox {
+        width: 14px;
+        height: 16px;
+        background: url('/Contents/Icons/uncheck.png') no-repeat;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .table-master-container .cell-checkbox-selected {
+        background: url('/Contents/Icons/check.png') no-repeat;
+        background-position: -3px -2px;
+    }
+
+.table-header {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    min-width: 1300px;
+    display: block;
+}
+
+    .table-header thead th {
+        border: 1px solid #ccc;
+        border-top: none;
+        box-sizing: border-box;
+        background: #ededed;
+    }
+
+    .table-header thead tr:first-child th {
+        padding: 8px;
+    }
+
+    .table-header thead tr:first-child th:last-child {
+        border-right: none;
+    }
+
+    .table-header thead tr:nth-child(2) th {
+        padding: 0;
+        background: #fff;
+    }
+
+        .table-header .btn-filter {
+            position: relative;
+            padding: 0;
+            border: none;
+            border-right: 1px solid #ccc;
+            background-color: #fcfcfc;
+            width: 28px;
+            flex-shrink: 0;
+            line-height: 100%;
+            cursor: pointer;
+            border-radius: unset !important;
+            text-align: center;
+            vertical-align: middle;
+            font: normal 12px/16px helvetica,arial,verdana,sans-serif;
+        }
+
+    .table-header .filter-input {
+        width: 100%;
+        padding: 4px 8px;
+        border: 1px solid transparent;
+        height: 18px;
+    }
+
+    .table-header .filter-input:focus {
+        border: 1px solid #026b98;
+    }
+
+#offsetRow:focus {
+    border: 1px solid #026b98;
+}
+
+.table-header .filter-input-dropdown {
+    padding-right: 20px;
+}
+
+    .table-header .filter-dropdown {
+        width: 24px;
+        height: 100%;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+    }
+    .table-header .icon-dropdown-arrow {
+        background: url('/Contents/Icons/arrow-down-line.png') no-repeat;
+        background-position: center;
+    }
+
+.table-header .filter-dropdown:hover {
+    cursor: pointer;
+}
+
+.table-body {
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow: hidden auto;
+    border-spacing: 0;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 61px;
+    left: 0px;
+    right: 0px;
+    min-width: 1299px;
+    bottom: 0px;
+}
+
+    .table-body tbody tr:hover {
+        background: #d8e9f3;
+    }
+
+    .table-body tbody tr.row-selected {
+        background: #c1e1f4;
+    }
+
+    .table-body tr:nth-child(2n+1) {
+        background: #f0f0f0;
+    }
+
+    .table-body tr td:nth-child(3) {
+        color: #026b98;
+    }
+
+    .table-body tr td:nth-child(3):hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+    .table-body td {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-top: none;
+        padding: 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+.table-header thead th:first-child {
+    border-left: none;
+}
+
+.table-header .table-header-checkbox {
+    min-width: 40px;
+}
+
+.table-header .table-header-date {
+    width: 150px;
+    max-width: 180px;
+    min-width: 150px;
+}
+
+.table-header .table-header-code {
+    width: 180px;
+    max-height: 220px;
+    min-width: 180px;
+}
+
+.table-header .table-header-target {
+    width: 230px;
+    min-width: 200px;
+    max-height: 230px;
+}
+
+.table-header .table-header-total {
+    width: 220px;
+    min-width: 220px;
+    max-width: 250px;
+}
+
+.table-header .table-header-note {
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+.table-header .table-header-type {
+    width: 280px;
+    min-width: 200px;
+    max-height: 300px;
+}
+
+.table-header-other {
+    width: 18px;
+    min-width: 18px;
+    border-right: none;
+}
+
+/******************* Detail *********************/
+
+.detail-title {
+    padding: 8px;
+    border-bottom: 2px solid #026b98;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+    color: #026b98;
+    font-weight: bold;
+}
+
+/*************** Table Detail ******************/
+
+.table-detail-container {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #ccc;
+    overflow: auto hidden;
+}
+
+.table-detail-header {
+    border-collapse: collapse;
+}
+
+    .table-detail-header thead th {
+        border: 1px solid #ccc;
+        border-top: none;
+        box-sizing: border-box;
+        padding: 8px;
+        background: #ededed;
+    }
+
+        .table-detail-header thead th:first-child {
+            border-left: none;
+        }
+
+        .table-detail-header thead th:last-child {
+            border-right: none;
+        }
+
+.table-detail-body {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    display: block;
+    overflow: hidden overlay;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    bottom: 32px;
+}
+
+    .table-detail-body td {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-top: none;
+        padding: 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .table-detail-body tr td:last-child {
+        border-right: none;
+    }
+
+
+.table-detail-desc {
+    width: 100%;
+    min-width: 400px;
+}
+
+.table-detail-money {
+    width: 300px;
+    min-width: 250px;
+}
+
+.table-detail-budget {
+    width: 250px;
+    min-width: 200px;
+}
+
+.table-detail-delete {
+    width: 40px;
+    min-width: 40px;
+}
+
+
+.table-detail-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+    .table-detail-footer td {
+        box-sizing: border-box;
+        border-right: 1px solid #ccc;
+        padding: 8px;
+        background: #e2e2e2;
+    }
+
+.table-detail-footer tr td:last-child {
+    border-right: none;
+}
+
+
+    .table-detail-footer .total-amount {
+        font-weight: bold;
+    }

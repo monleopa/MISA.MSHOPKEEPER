@@ -1,0 +1,314 @@
+﻿input, button, select {
+    outline: none;
+}
+
+/******************* HEADER PAGE **********************/
+.header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background: #fff;
+}
+
+.logo {
+    background: url('/Contents/Icons/logo-mshopkeeper.png') no-repeat;
+    height: 100%;
+    width: 140px;
+    background-position: center;
+    background-color: #00577b;
+    z-index: 1;
+}
+
+.header-logo-container {
+    background: #006189;
+    height: 100%;
+    width: 150px;
+    padding: 0 10px;
+}
+
+    .header-logo-container:hover {
+        cursor: pointer;
+    }
+
+.title-text {
+    padding-top: 15px;
+}
+
+.header-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-main-right {
+    margin: auto 0;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.header-main-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #212121;
+    margin: 15px 0 15px 21px;
+}
+
+.header-right-use {
+    border-right: 1px solid #e0e0e0;
+    padding: 5px 0;
+    margin: auto 0;
+}
+
+    .header-right-use a {
+        text-decoration: none;
+        color: #026b97;
+        font-size: 13px;
+        padding-right: 15px;
+    }
+
+        .header-right-use a:hover {
+            border-color: #518bbd;
+            font-weight: 500;
+        }
+
+.select-user {
+    margin: auto 0;
+    display: flex;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-left: 21px;
+}
+
+    .select-user:hover {
+        cursor: pointer;
+    }
+
+.select-user-text {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: auto 0;
+    font-weight: 500;
+}
+
+.select-user-icon {
+    width: 12px;
+    background: url(/Contents/Icons/arrow-down-line.png) no-repeat;
+    height: 4px;
+    margin: auto 0;
+}
+
+.option-user {
+    display: flex;
+    margin-left: 20px;
+}
+
+    .option-user:hover {
+        cursor: pointer;
+    }
+
+.option-user-avatar {
+    width: 28px;
+    height: 28px;
+    background: url(/Contents/Images/avatar.jpg) no-repeat;
+    background-size: 28px;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.option-user-infor {
+    display: flex;
+}
+
+.option-user-text {
+    padding: 0 8px;
+    margin: auto 0;
+    font-weight: 700;
+}
+
+.option-user-icon {
+    display: flex;
+    width: 12px;
+    background: url(/Contents/Icons/arrow-down-line.png) no-repeat;
+    height: 4px;
+    margin: auto 0;
+}
+
+.phone-support {
+    margin-left: 20px;
+    height: 52px;
+    width: 45px;
+    background: #07f url("/Contents/Images/misasupport_1.png") no-repeat;
+}
+
+.notify {
+    padding: 0 18px;
+    border-left: 1px solid #e0e0e0;
+    height: 52px;
+}
+
+.notify-icon {
+    width: 16px;
+    height: 18px;
+    background: url(/Contents/Icons/notify-18.png) no-repeat;
+    margin-top: 16px;
+}
+
+    .notify-icon:hover {
+        cursor: pointer;
+        background: url(/Contents/Icons/notify-hover-18.png) no-repeat;
+    }
+
+.help {
+    padding: 0 16px;
+    border-left: 1px solid #e0e0e0;
+    height: 52px;
+}
+
+.help-icon {
+    width: 18px;
+    height: 18px;
+    background: url(/Contents/Icons/icon_help_18.png) no-repeat;
+    margin-top: 16px;
+}
+
+    .help-icon:hover {
+        cursor: pointer;
+        background: url(/Contents/Icons/icon-help-18-hover.png) no-repeat;
+    }
+/**************** Content *****************/
+
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 52px;
+    bottom: 0;
+    display: flex;
+}
+
+/***************** Menu ********************/
+
+.content-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 140px;
+    background: #026b97;
+    overflow: hidden auto;
+}
+
+.menu-item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+    .menu-item:hover {
+        cursor: pointer;
+        background: #00577b;
+    }
+
+    .menu-item .item-icon {
+        width: 28px;
+        height: 21px;
+        background: url('/Contents/Icons/slibarmenu.png') no-repeat;
+    }
+
+    .menu-item .item-icon-overview {
+        background-position: -31px -1px;
+    }
+
+    .menu-item .item-icon-report {
+        background-position: -31px -281px;
+    }
+
+    .menu-item .item-icon-notebuy {
+        background: url('/Contents/Icons/ic_sogiaohang.png') no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .menu-item .item-icon-buy {
+        background-position: -33px -41px;
+    }
+
+    .menu-item .item-icon-stock {
+        background-position: -31px -82px;
+    }
+
+    .menu-item .item-icon-cash {
+        background-position: -31px -123px;
+    }
+
+    .menu-item .item-icon-money {
+        background-position: -31px -162px;
+    }
+
+    .menu-item .item-icon-fee {
+        background-position: -31px -162px;
+    }
+
+    .menu-item .item-icon-sale {
+        background-position: -31px -201px;
+    }
+
+    .menu-item .item-icon-menu {
+        background-position: -31px -243px;
+    }
+
+    .menu-item .item-icon-dictionary {
+        background-position: -31px -241px;
+    }
+
+    .menu-item .item-icon-sms {
+        background: url('/Contents/Icons/sms_menu.svg') no-repeat;
+        background-position: 7px 0px;
+    }
+
+    .menu-item .item-icon-ship {
+        background: url('/Contents/CukCuk/ship.png') no-repeat;
+        background-position: 4px 0px;
+    }
+
+    .menu-item .item-icon-meinvoice {
+        background: url('/Contents/Icons/Logo_meInvoice.svg') no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .menu-item .item-icon-config {
+        background-position: -31px -321px;
+    }
+
+    .menu-item .item-icon-help {
+        background-position: -31px -390px;
+    }
+
+    .menu-item .item-icon-subcriber {
+        background-position: -31px -426px;
+    }
+
+    .menu-item .item-icon-5shop {
+        background: url('/Contents/Icons/icon_5shop_white_24_1.png') no-repeat;
+        background-position: -3px -3px;
+    }
+
+    .menu-item .item-icon-ocm {
+        background: url('/Contents/Icons/ic_ocm_logo.png') no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .menu-item .item-icon-api {
+        background: url('/Contents/Icons/ic_api_20.svg') no-repeat;
+        background-position: 0px 2px;
+    }
+
+
+    .menu-item .item-text {
+        color: #fff;
+    }

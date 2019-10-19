@@ -1,0 +1,13 @@
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.BL.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.BL.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.Common.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.DL.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.Entity.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.Common.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.DL.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\bin\Release\MISA.Entity.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\obj\Release\MISA.BL.csprojAssemblyReference.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\obj\Release\MISA.BL.csproj.CoreCompileInputs.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\obj\Release\MISA.BL.csproj.CopyComplete
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\obj\Release\MISA.BL.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.BL\obj\Release\MISA.BL.pdb

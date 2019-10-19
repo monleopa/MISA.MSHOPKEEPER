@@ -1,0 +1,590 @@
+﻿.ui-dialog .disable {
+    pointer-events: none;
+    background: #e5e6eb;
+    opacity: 1;
+}
+
+    .ui-dialog .disable input {
+        pointer-events: none;
+        background: #e5e6eb;
+    }
+
+    .ui-dialog .btn-icon:hover {
+        cursor: pointer;
+    }
+
+.ui-dialog .btn-agree {
+    border: 1px solid #026b97;
+    background: #026b97;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 7px;
+    width: 90px;
+}
+
+.ui-dialog .btn-agree:hover {
+    background: #0088c2;
+}
+
+.ui-dialog .btn-agree:focus {
+    background: #0088c2;
+}
+
+.ui-dialog .btn-cancel {
+    width: 90px;
+    border: 1px solid transparent;
+    background: #fff;
+    color: #026b97;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 7px;
+    margin-left: 4px;
+}
+
+.ui-dialog .btn-cancel:hover {
+    border: 1px solid #026b97;
+}
+
+.ui-dialog .btn-cancel:focus {
+    border: 1px solid #026b97;
+}
+
+.ui-dialog .btn-goback {
+    width: 90px;
+    border: 1px solid #026b97;
+    background: #fff;
+    color: #026b97;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 7px;
+    margin-left: 4px;
+}
+
+.ui-dialog .help-footer {
+    color: #026b97;
+    font-weight: bold;
+    width: 90px;
+}
+
+.ui-dialog .help-footer:hover {
+    cursor: pointer;
+}
+
+
+/************ Dialog xem, thêm, sửa *************/
+
+.ui-dialog .dialog-create-edit {
+    padding: 0;
+    background: #fff;
+}
+
+.ui-dialog .dialog-content {
+    padding: 8px;
+    display: flex;
+}
+
+    .ui-dialog .dialog-content .dialog-content-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .ui-dialog .dialog-content .infor-general {
+        width: 70%;
+    }
+
+    .ui-dialog .dialog-content .infor-ref {
+        width: 30%;
+    }
+
+.ui-dialog .grid-wrap {
+    grid-column: 2/4;
+}
+
+.ui-dialog .grid-infor-general {
+    display: grid;
+    grid-template-columns: 100px 30% auto;
+    grid-gap: 6px;
+    padding: 8px;
+}
+
+.ui-dialog .grid-infor-ref {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 6px;
+    padding: 8px;
+    padding-right: 0;
+}
+
+.ui-dialog .input-container {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+    .ui-dialog .input-container input {
+        line-height: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+    }
+
+.ui-dialog .icon-dropdown-arrow {
+    width: 24px;
+    height: 18px;
+    background: url(/Contents/Icons/arrow-down-line.png) no-repeat;
+    background-position: center;
+}
+
+.ui-dialog .icon-dropdown-arrow:hover {
+    cursor: pointer;
+}
+
+.ui-dialog .table-dialog {
+    padding: 8px;
+}
+
+.ui-dialog .table-dialog .table-dialog-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.ui-dialog .table-dialog .table-dialog-container {
+    border: 1px solid #ccc;
+    position:absolute;
+    bottom: 8px;
+    top: 312px;
+    left: 8px;
+    right: 8px;
+}
+
+.ui-dialog .table-detail-money {
+    min-width: 200px;
+}
+
+.ui-dialog .table-dialog-header {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+    .ui-dialog .table-dialog-header th {
+        border: 1px solid #ccc;
+        border-top: 0;
+        box-sizing: border-box;
+        padding: 8px;
+        border-left: none;
+        text-align: center;
+        background: #f0f0f0;
+        border-spacing: 0;
+    }
+
+.ui-dialog .table-dialog-body {
+    display: block;
+    overflow: hidden auto;
+    position: absolute;
+    bottom: 32px;
+    top: 32px;
+}
+
+    .ui-dialog .table-dialog-body input {
+        background: transparent;
+    }
+
+    .ui-dialog .table-dialog-body, .table-dialog-footer {
+        width: 100%;
+        border-collapse: collapse;
+        box-sizing: border-box;
+    }
+
+    .ui-dialog .table-dialog-body td {
+        border: 1px solid #ccc;
+        border-left: none;
+        box-sizing: border-box;
+        padding: 0px;
+        border-spacing: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        border-top: none;
+    }
+
+.ui-dialog .table-dialog-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.ui-dialog .table-dialog-footer td {
+    box-sizing:border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom: none;
+}
+
+#totalAmountDialog {
+    text-align: right;
+    font-weight: bold;
+}
+
+.table-dialog-body td .input-container {
+    border: 1px solid transparent;
+}
+
+.ui-dialog .input-focus {
+    border: 1px solid #026b97;
+    border-radius: 3px;
+    background: #fff !important;
+}
+
+.ui-dialog .table-dialog-body .input-focus {
+    border: 1px solid #026b97 !important;
+    border-radius: 3px;
+    background: #fff !important;
+}
+
+.table-dialog-body td input[property="AmountMoney"] {
+    text-align: right;
+}
+
+.ui-dialog .dialog-detail-body tbody tr:first-child td {
+    border-top: none;
+}
+
+.ui-dialog .btn-delete-row {
+    background: url("/Contents//Icons/common-icon.png");
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    margin: auto;
+}
+
+    .ui-dialog .btn-delete-row:hover {
+        border: 1px solid #df4646;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .ui-dialog .btn-delete-row:focus {
+        border: 1px solid #df4646;
+        border-radius: 3px;
+    }
+
+#tableDialogFooter:focus {
+    outline: none;
+}
+
+/********************* Dialog Xóa *********************/
+#refCodeDelete {
+    font-weight: bold;
+    color: #df4646;
+}
+
+.dialog-delete-inward {
+    display: none;
+    position: relative;
+}
+
+    .dialog-delete-inward .content-dialogDelete {
+        background-color: #fff;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+    }
+
+        .dialog-delete-inward .content-dialogDelete .icon-question {
+            background: transparent url('/Contents/Icons/icon-popup.png') no-repeat -168px -2px;
+            height: 40px;
+            width: 42px;
+            margin: auto 0;
+        }
+
+        .icon-danger {
+            background: transparent url(/Contents/Icons/icon-popup.png) no-repeat -57px -2px;
+            height: 40px;
+            width: 42px;
+            margin: auto 0;
+        }
+
+        .dialog-delete-inward .content-dialogDelete .txt-question {
+            margin: auto 0;
+            width: calc(100% - 40px);
+            padding-left: 10px;
+            font-size: 13px;
+            font-family: Roboto;
+        }
+
+
+    .dialog-delete-inward .footer-dialogDelete {
+        height: 48px;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background: #fff;
+    }
+
+.footer-dialogDelete .btn-dialogDelete {
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    display: flex;
+}
+
+.btn-delete {
+    height: 32px;
+    width: 75px;
+    background-color: #df4646;
+    margin-right: 4px;
+    border-radius: 3px;
+    display: flex;
+}
+
+    .btn-delete:hover {
+        cursor: pointer;
+    }
+
+.content-btn-delete {
+    margin: 0 auto;
+    display: flex;
+}
+
+.icon-delete-dialogDelete {
+    height: 32px;
+    width: 16px;
+    background-image: url('/Contents/Icons/delete-white.png');
+    background-repeat: no-repeat;
+    background-position-y: 9px;
+}
+
+.sub-btn-delete {
+    font-family: Roboto;
+    font-size: 13px;
+    color: white;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.btn-cancel-delete {
+    height: 32px;
+    width: 75px;
+    background-color: white;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+    .btn-cancel-delete:hover {
+        cursor: pointer;
+    }
+
+.content-btn-cancel {
+    margin: 0 auto;
+    display: flex;
+    width: 58px;
+}
+
+.icon-cancel-dialogDelete {
+    height: 32px;
+    width: 16px;
+    background: transparent url('/Contents/Icons/common-icon.png') no-repeat -255px -120px;
+}
+
+.sub-btn-cancel {
+    font-family: Roboto;
+    font-size: 13px;
+    color: #026b97;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+/******************** Dialog Xác nhận không lưu ******************/
+.dialog-notify-inward {
+    display: none;
+    position: relative;
+}
+
+    .dialog-notify-inward .content-dialogNotify {
+        background-color: #fff;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+    }
+
+        .dialog-notify-inward .content-dialogNotify .icon-question {
+            background: transparent url('/Contents/Icons/icon-popup.png') no-repeat -168px -2px;
+            height: 40px;
+            width: 40px;
+            margin: auto 0;
+        }
+
+        .dialog-notify-inward .content-dialogNotify .txt-question {
+            margin: auto 0;
+            width: calc(100% - 40px);
+            padding-left: 10px;
+            font-size: 13px;
+            font-family: Roboto;
+        }
+
+    .dialog-notify-inward .footer-dialogNotify {
+        height: 48px;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background-color: #fff !important;
+    }
+
+.footer-dialogNotify .btn-dialogNotify {
+    height: 32px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    display: flex;
+}
+
+.btn-save {
+    height: 32px;
+    width: 75px;
+    background-color: #026b97;
+    margin-right: 4px;
+    border-radius: 3px;
+    display: flex;
+}
+
+    .btn-save:hover {
+        cursor: pointer;
+    }
+
+.content-btn-save {
+    margin: 0 auto;
+    display: flex;
+}
+
+.icon-save-dialogNotify {
+    height: 32px;
+    width: 16px;
+    background-image: url('/Contents/Icons/save-white.png');
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    padding: 0;
+}
+
+.sub-btn-save {
+    font-family: Roboto;
+    font-size: 13px;
+    color: white;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.btn-unSave {
+    height: 32px;
+    width: 90px;
+    background-color: white;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: 1px solid #026b97;
+}
+
+    .btn-unSave:hover {
+        cursor: pointer;
+    }
+
+.content-btn-unSave {
+    margin: 0 auto;
+    display: flex;
+    width: 78px;
+}
+
+.icon-unSave-dialogNotify {
+    height: 32px;
+    width: 16px;
+    background-image: url('/Contents/Icons/not-save.png');
+    background-repeat: no-repeat;
+    background-position-y: 7px;
+    padding: 0;
+}
+
+.sub-btn-unSave {
+    font-family: Roboto;
+    font-size: 13px;
+    color: #026b97;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.icon-cancel-dialogNotify {
+    height: 32px;
+    width: 16px;
+    background: transparent url('/Contents/Icons/common-icon.png') no-repeat -255px -120px;
+    padding: 0;
+}
+
+.disable-input-container {
+    background: rgb(240, 240, 240) !important;
+}
+
+.disable-input {
+    pointer-events: none;
+    background: transparent;
+}
+
+.disable-button {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/*********** Common dialog ***********/
+
+.ui-dialog .table-header-other {
+    width: 17px;
+    border-right: none !important;
+}
+
+.disable-input-container {
+    background: rgb(240, 240, 240) !important;
+}
+
+.disable-input {
+    pointer-events: none;
+    background: transparent;
+}
+
+/****************** Dialog thông báo data invalid *********************/
+
+.btn-notify-invalid {
+    width: 75px;
+    height: 32px;
+    border: 1px solid #026b97;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    background: #026b97;
+    margin-right: 8px;
+}
+
+.btn-notify-invalid:hover{
+    background: #0088c2;
+}
+
+.btn-notify-invalid:focus {
+    background: #0088c2;
+}
+
+.content-btn-notify {
+    margin: auto;
+    color: #fff;
+}

@@ -1,0 +1,138 @@
+﻿.type-create {
+    background: #fff;
+    position: absolute;
+    box-shadow: rgb(136, 136, 136) 0px 3px 6px;
+    z-index: 99999;
+}
+
+.type-create .row-type-create {
+    padding: 8px;
+}
+
+
+    .type-create .row-type-create:hover {
+        background: #01567b;
+        color: #fff;
+    }
+
+.row-type-create:focus {
+    outline: none;
+    background: #026b98;
+    color: white;
+}
+/************** Popup Filter ****************/
+.filter-select {
+    z-index: 9999999999;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: rgb(136, 136, 136) 0px 3px 6px;
+    border-radius: 3px;
+    width: 180px;
+}
+
+    .filter-select .filter-row {
+        padding: 8px;
+    }
+
+    .filter-select .filter-row:hover {
+        cursor: pointer;
+        background: #c1e1f4;
+    }
+
+.highlight {
+    background: red;
+}
+
+/************** popup table ***************/
+
+.popup-dialog {
+    position: absolute;
+    background: #fff;
+    box-shadow: rgb(136, 136, 136) 0px 3px 6px;
+    z-index: 99999;
+}
+
+    .popup-dialog .popup-table-header {
+        border-collapse: collapse;
+        box-sizing: border-box;
+    }
+
+        .popup-dialog .popup-table-header th {
+            background: #f0f0f0;
+            box-sizing: border-box;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+    .popup-dialog .popup-table-body {
+        max-height: 200px;
+        overflow: hidden auto;
+        border-collapse: collapse;
+        box-sizing: border-box;
+        display: block;
+    }
+
+        .popup-dialog .popup-table-body tr:hover {
+            background: #d8e9f3;
+        }
+
+    .popup-dialog .popup-table-body td {
+        box-sizing: border-box;
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .popup-dialog .table-popup-code {
+        min-width: 100px;
+    }
+
+    .popup-dialog .table-popup-name {
+        min-width: 160px;
+    }
+
+    .popup-dialog .table-popup-type {
+        min-width: 160px;
+    }
+
+/******* Loading data *******/
+
+/********************* Loading dữ liệu ***********************/
+.loading-table-master {
+    bottom: 0px;
+    top: 61px;
+    z-index: 1;
+}
+
+.loading-wrap {
+    width: 100%;
+    background-color: rgb(157,157,157);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-content {
+    width: 125px;
+    height: 65px;
+    padding: 8px 8px;
+    background-color: rgb(208,208,208);
+    text-align: center;
+}
+
+.img-loading {
+    margin-bottom: 8px;
+}
+
+.loading-table-detail {
+    bottom: 0px;
+    top: 32px;
+    z-index: 1;
+}
+
+.loading-dialog-create {
+    bottom: 0px;
+    top: 0px;
+    z-index: 1;
+}

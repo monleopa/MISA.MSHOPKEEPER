@@ -1,0 +1,9 @@
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\bin\Debug\MISA.Common.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\bin\Debug\MISA.Common.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\bin\Debug\MISA.Entity.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\bin\Debug\MISA.Entity.pdb
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\obj\Debug\MISA.Common.csprojAssemblyReference.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\obj\Debug\MISA.Common.csproj.CoreCompileInputs.cache
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\obj\Debug\MISA.Common.csproj.CopyComplete
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\obj\Debug\MISA.Common.dll
+E:\ndanh\GiaiDoan2\MISA.MSHOPKEEPER\MISA.Common\obj\Debug\MISA.Common.pdb
